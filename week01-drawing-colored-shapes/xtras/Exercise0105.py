@@ -1,6 +1,6 @@
 # The following function is designed to print 'n' numbers in the range from 'start' to 'end'. However, the program
-# fails at runtime.
-# Identify the problem and provide a fix. The fix consists of adding just one character.
+# fails at runtime (with a runtime error).
+# First, identify the problem. Next, provide a fix. Note that the fix is as simple as adding just one character.
 
 
 def print_numbers(start, end, n):

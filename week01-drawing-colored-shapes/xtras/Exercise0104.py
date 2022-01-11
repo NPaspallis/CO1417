@@ -1,6 +1,5 @@
 # The attached code is supposed to print a checker pattern (like a chessboard). But it has a bug.
-# You are asked to fix the bug, using only whitespace! (That is, you are not supposed to type new text, or delete
-# existing text!)
+# You are asked to fix the bug. The solution is as simple as adding just one line of code.
 
 # Let's start with importing the 'tkinter' library again.
 from tkinter import *
@@ -44,7 +43,7 @@ black = True
 
 for x in range(side//2, WIDTH, side):  # The double slash ensures an integer division (i.e. not a floating number).
     for y in range(side//2, HEIGHT, side):
-        print('Drawing a circle at x=', x, ', y=', y)
+        print('Drawing a square at x=', x, ', y=', y)
         black = not black
         if black:
             color = 'black'
