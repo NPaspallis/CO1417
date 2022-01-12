@@ -7,7 +7,7 @@ First, identify the problem. Next, provide a fix.
 Hint:
 - The fix is as simple as adding just one character.
 
-```
+```python
 def print_numbers(start, end, n):
     width = end - start + 1
     for i in range(start, end, width / n):

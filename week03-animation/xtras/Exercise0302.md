@@ -5,4 +5,4 @@ the smaller of the two (i.e., smaller radius) is removed from the window.
 ***But*** the remaining (larger) ball is enlarged (i.e., its radius is increased by as much as the smaller\'s radius).
 Effectively this will result to the illusion of the larger ball *absorbing* the smaller one. 
 
-![large absorbs small](https://raw.githubusercontent.com/NPaspallis/CO1417/main/week01-drawing-colored-shapes/xtras/Exercise0301.png)
+![large absorbs small](https://raw.githubusercontent.com/NPaspallis/CO1417/main/week03-animation/xtras/Exercise0302.png)

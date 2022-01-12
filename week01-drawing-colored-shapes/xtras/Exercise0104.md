@@ -6,7 +6,7 @@ You are asked to fix the bug.
 Hint:
 - The solution is as simple as adding just one line of code.
 
-```
+```python
 # Let's start with importing the 'tkinter' library
 from tkinter import *
 
