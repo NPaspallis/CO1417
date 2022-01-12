@@ -1,7 +1,13 @@
-# The attached code is supposed to print a checker pattern (like a chessboard). But it has a bug.
-# You are asked to fix the bug. The solution is as simple as adding just one line of code.
+# Exercise 0105
 
-# Let's start with importing the 'tkinter' library again.
+The attached code is supposed to print a checker pattern (like a chessboard). But it has a bug.
+You are asked to fix the bug.
+
+Hint:
+- The solution is as simple as adding just one line of code.
+
+```
+# Let's start with importing the 'tkinter' library
 from tkinter import *
 
 
@@ -44,7 +50,7 @@ black = True
 for x in range(side//2, WIDTH, side):  # The double slash ensures an integer division (i.e. not a floating number).
     for y in range(side//2, HEIGHT, side):
         print('Drawing a square at x=', x, ', y=', y)
-        black = not black
+        black = not black  
         if black:
             color = 'black'
         else:
@@ -52,3 +58,8 @@ for x in range(side//2, WIDTH, side):  # The double slash ensures an integer div
         draw_square(canvas, x, y, side, color)
 
 win.mainloop()  # Always, the last command must be the 'mainloop()' to run the GUI.
+
+```
+
+This is what the correct output should look like:
+![checker board](https://raw.githubusercontent.com/NPaspallis/CO1417/main/week01-drawing-colored-shapes/xtras/Exercise0104.png)
