@@ -45,6 +45,14 @@ The exact specification, marking scheme, and hints are provided in the correspon
 
 ## Games and Graphics
 
+### Week 5 - Images
 
+Provides an introduction to basic image encoding. Explores pixel-by-pixel representation of bitmaps, and uses that
+to read and present images from files. It covers these programming concepts:
+- Arrays
+- Two-dimensional arrays
+- Loops and Nested Loops
+- Reading from files
+- Basic data transformation
 
 ## Networks and Security
