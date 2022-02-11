@@ -5,7 +5,7 @@ WIDTH = 800
 HEIGHT = 600
 
 win = Tk()  # as before, creates a window
-win.title('Welcome to your own image viewer!')
+win.title('Welcome to your bitmap viewer!')
 
 canvas = Canvas(win, width=WIDTH, height=HEIGHT)
 canvas.pack()
