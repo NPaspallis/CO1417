@@ -7,6 +7,8 @@ Revisit the code from ``step0704``, [adding_obstacles.py](../step0704/adding_obs
 1. Implement a Flappy wings game by integrating the *flappy wings* animation, and its animation, as
 described in [week06](../../week06-animations).
 
+It is suggested that you use the smaller *Flappy wings* frames (under the [flappy-wings/](flappy-wings) folder).
+
 The final code would implement something similar to the following animation:
 
 ![Flappy wings game](flappy_wings_final.gif)
