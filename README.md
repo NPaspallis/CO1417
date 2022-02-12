@@ -49,10 +49,31 @@ The exact specification, marking scheme, and hints are provided in the correspon
 
 Provides an introduction to basic image encoding. Explores pixel-by-pixel representation of bitmaps, and uses that
 to read and present images from files. It covers these programming concepts:
-- Arrays
+- Arrays/Lists
 - Two-dimensional arrays
 - Loops and Nested Loops
 - Reading from files
 - Basic data transformation
+
+### Week 6 - Character animations
+
+Discusses loading standard image formats such as PNG and GIF.
+Uses frame switching to realize simple animations.
+Also discusses methods to add interaction to animated characters.
+It revises these programming concepts:
+- Arrays/Lists
+- Loops and Conditionals
+- Functions
+- Reading from files
+
+### Week 7 - Parallax effect
+
+Applying basic maths and physics into coding.
+Realizing a movement illusion, and adding depth utilizing the parallax effect. It revises these core
+programming concepts:
+- Arrays/Lists
+- Loops and Conditionals
+- Functions
+- Reading from files
 
 ## Networks and Security
