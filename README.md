@@ -75,5 +75,9 @@ programming concepts:
 - Loops and Conditionals
 - Functions
 - Reading from files
+- Python ranges
+- Random numbers
+
+### Week 8 - Capstone project: Runner game
 
 ## Networks and Security
