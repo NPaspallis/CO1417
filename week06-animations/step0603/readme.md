@@ -13,6 +13,8 @@ Remember [Flappy bird](https://en.wikipedia.org/wiki/Flappy_Bird)? It had quite 
 
 This animation consists of [9 frames](flappy-wings-frames.png), separated by 0.1 seconds.
 
+    Note: The graphics used to form games are also known as `sprites`
+
 The individual frames are extracted and stored under ``/frames``.
 
 Can we use the same technique of switching between frames to animate a character in a game?

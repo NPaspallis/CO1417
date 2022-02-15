@@ -83,4 +83,4 @@ def update():
 win.after(0, update)
 win.mainloop()
 
-# TODO Study the added code which adds the obstacles ('pipes') functionality. The solve Exercise0704.
+# TODO Study the added code which adds the obstacles ('pipes') functionality. Then solve Exercise0704 and Exercise0705.

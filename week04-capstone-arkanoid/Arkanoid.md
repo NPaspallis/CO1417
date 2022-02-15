@@ -60,4 +60,4 @@ when the ball touches the bottom side of the window.
 
 This is an example of what the end game _could_ look like:
 
-![Arkanoid](https://raw.githubusercontent.com/NPaspallis/CO1417/main/week04-capstone-arkanoid/Arkanoid.png)
+![Arkanoid](Arkanoid.png)
