@@ -30,4 +30,4 @@ all_words = list(word_generator(word_size))
 for word in all_words:
     print(word)
 
-# TODO Implement the dictionary password attack and measure the time it takes to 'break' some words - see readme.md for more info
+# TODO Implement the dictionary password attack and measure the time it takes to 'break' some words - see lists.py for more info

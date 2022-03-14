@@ -41,8 +41,9 @@ win.bind('<Motion>', move)
 # All the code up to here is the same as in the previous exercise.
 # Python has 4 main data structures built in the language: Lists, Tuples, Sets, and Dictionaries.
 # The most common data structure is the List, which is essentially a sequence of values (of any type).
-# The main characteristics of Lists are: they are ordered, they are editable, and the allow multiple copies of the same
+# The main characteristics of Lists are: they are ordered, they are editable, and they allow multiple copies of the same
 # value. You can learn more at: https://www.w3schools.com/python/python_lists.asp.
+# Python does not include a concept of Arrays, but the Lists is an efficient and effective substitute.
 # In this example, we define a new list containing a sequence of colors (as strings) to be used for switching the fill
 # color of the drawn circle.
 colors = ['red', 'blue', 'green', 'orange', 'cyan', 'yellow']  # Note how Lists use square brackets to initialize.

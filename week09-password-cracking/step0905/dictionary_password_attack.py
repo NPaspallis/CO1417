@@ -10,4 +10,4 @@ for line in all_lines:
 for word in dictionary_words:
     print(word)
 
-# TODO Implement the dictionary password attack and measure the time it takes to 'break' some words - see readme.md for more info
+# TODO Implement the dictionary password attack and measure the time it takes to 'break' some words - see lists.py for more info
