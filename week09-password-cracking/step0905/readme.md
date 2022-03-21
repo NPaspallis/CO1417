@@ -20,7 +20,7 @@ In this step we examine:
 
 ### Assumptions
 
-- All passwords when in plaintext consist of lower-case letters only, i.e. 'a' to 'z' - no capitals, no digits, no
+- All passwords when in plaintext consist of lower-case letters only, i.e. `a` to `z` - no capitals, no digits, no
   gaps, and no punctuation.
 - To keep it manageable, assume all passwords are 5-letter long.
 - You are provided with the file [words_5_letters.txt](words_5_letters.txt) which contains 15918 words. These are
