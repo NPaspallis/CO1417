@@ -16,8 +16,9 @@ In this challenge you are asked to create a program to realise a simulation of c
     - 'C': means swap the cups at positions 1 and 3
 
 Create a function named ``simulate`` to compute the final positions of the ball.
+- You can assume the ball always start under the 1st cup (left)
 - The input will be a list containing a sequence of letters, e.g., ``['A', 'A', 'B', 'C']``.
-- The output will be an integer, e.g., ``1`` or ``2`` or ``3``.
+- The output will be an integer, e.g., ``1`` or ``2`` or ``3`` saying where the ball is at the end.
 
 ```python
 def simulate(moves) -> int:  # the arrow (->) means that the function returns a value of this type

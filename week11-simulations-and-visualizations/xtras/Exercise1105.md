@@ -18,9 +18,9 @@ ways to programmatically create a [fractal curve](https://en.wikipedia.org/wiki/
 
 The rules are as simple as these:
 - Start with 3 points A, B, and C forming an equilateral triangle (this works also with other triangles and even other
-shapes, but we like symmetry!)
+shapes, but we like simplicity and symmetry!)
 - Choose a starting point in random. The point can be anywhere, even outside the triangle. To keep it simple, just
-pick point A (or any of the nodes of the triangle).
+pick point A (or any of the other 2 nodes of the triangle) as the starting point.
 - Repeat this algorithm forever:
   - Choose any of the 3 nodes ``A``, ``B``, ``C``, in random.
   - Find the midpoint between the current point, and the selected node
@@ -29,12 +29,17 @@ pick point A (or any of the nodes of the triangle).
   - [Optional]: choose color based on the selected node, e.g., ``['red', 'green', 'blue']`` for ``['A', 'B', 'C']``
   respectively.
 
-
 You are asked to implement the above algorithm.
 
 A very simple, and step-by-step explanation is discussed in
 [this article](https://beltoforion.de/en/recreational_mathematics/chaos_game.php),
 and is visually demonstrated in [this video](https://www.youtube.com/watch?v=kbKtFN71Lfs).
+
+> The midpoint m of points p<sub>1</sub> = (x<sub>1</sub>, y<sub>1</sub>) and p<sub>2</sub> = (x<sub>2</sub>, y<sub>2</sub>)
+> is easily computed as follows:
+> 
+> m = (x<sub>m</sub>, y<sub>m</sub>), where x<sub>m</sub> = (x<sub>1</sub> + x<sub>2</sub>) / 2, and
+> y<sub>m</sub> = (y<sub>1</sub> + y<sub>2</sub>) / 2
 
 When you implement the algorithm yourself, you should get an output similar to the following screenshot:
 

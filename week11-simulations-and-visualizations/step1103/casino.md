@@ -45,7 +45,7 @@ The [Martingale betting strategy](https://en.wikipedia.org/wiki/Martingale_(bett
 
 In theory this strategy will always produce profits, as long as the player has infinite wealth to keep playing.
 In practice, nobody has infinite wealth and thus this strategy does not really work to your benefit, especially when
-you consider the fact that the odds are (slightly) against the player.
+you consider the fact that the odds are (slightly but surely) against the player.
 
 In this challenge, you are asked to edit the code in [casino.py](casino.py) to implement the Martingale strategy.
 Once implemented, the screenshots will appear similar to the following (top for winning, and bottom for losing).
