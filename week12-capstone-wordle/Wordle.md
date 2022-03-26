@@ -15,7 +15,8 @@ The game was bought by the [New York Times](https://www.nytimes.com/2022/01/31/b
 Players have six attempts to guess a five-letter word, with feedback given for each guess 
 in the form of colored tiles indicating when letters match or occupy the correct position.
 
-![Wordle](wordle.png)
+<img src=wordle.png alt='Wordle - solution of puzzle #275 (released on the 21st of March 2022)' width=320>
+
 _The screenshot above shows the solution of puzzle #275 (released on the 21st of March 2022)_
 
 After every guess, each letter is marked as either green, yellow or gray:
