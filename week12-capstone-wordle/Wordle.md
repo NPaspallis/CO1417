@@ -32,7 +32,7 @@ thousand 5-letter words: [words_5_letters.txt](../week09-password-cracking/step0
 However, the words available in the puzzle is actually a subset of the full list of 5-letter English words,
 approximately thirteen thousands. The list of used words can be accessed via the 
 [source code](https://www.nytimes.com/games/wordle/main.b84b7aa7.js) of the game (you will notice the code is
-not very readable, as the JavaScript was minified/compressed). Nevertheless, w¡e have copied those words in the file
+not very readable, as the JavaScript was minified/compressed). Nevertheless, we have copied those words in the file
 [wordles.txt](wordles.txt).
 
 ## Requirements:
@@ -44,11 +44,11 @@ There are individual requirements, each one of which corresponds to a function.
 To achieve each marking level, you need to implement one of the corresponding functions, which
 are in incremental order of difficulty.
 
-Briefly the functions require that you:
-1. Build a function which computes the frequency of each letter as it appears in a given list of words 
+Briefly for this capstone project you are required to:
+1. Build a function which computes the frequency of each letter as it appears in a given list of words.
 2. Build a function which for a given list of words and a given list of letters it returns only those words which contain the given letters.
-3. Build a function which realizes the Wordle check: for a given secret word and an attempted solution, return a list of colors as pwe Wordle's rules.
-4. Build a function which given a list of words and some constraints it finds a possible answer to the Wordle puzzle.
+3. Build a function which realizes the Wordle check: for a given secret word and an attempted solution, ιτ returns a list of colors as per Wordle's rules.
+4. Build a function which, given a list of words and some constraints, it finds a possible answer to the Wordle puzzle.
 
 See the Marking scheme below for details on what to build for each function.
 Additionally, see the template file [wordle.py](wordle.py) with the signature and documentation
@@ -56,9 +56,9 @@ for each required function.
 
 ## Marking scheme:
 
-### Pass (40%+)
+### Pass (40%)
 * Implement a function named ``print_frequencies`` which given a list of words, it prints a list of all letters found in
-these words, and their frequency (i.e., number of times encountered for each letter).
+these words, and their frequency (i.e., the number of times each letter is encountered).
 
 * See sample runs below for more info.
 
@@ -102,9 +102,9 @@ x 288
 z 434
 ```
 
-### Lower Second (50%+)
-* Enhance the above function ``print_frequencies`` so that the printed output shows the letters sorted by frequency,
-i.e., the letter with the highest frequency shows on top, etc.
+### Lower Second (50%)
+* Enhance the above function ``print_frequencies`` so that the printed output shows the letters sorted by frequency in
+descending order, i.e., the letter with the highest frequency shows on top.
 
 * See sample runs below for more info.
 
@@ -119,7 +119,7 @@ r 1
 d 1
 ```
 
-The call ``print_frequencies(wordles)`` (where the wordles is the list of all words in file [wordles.txt](wordles.txt)) produces the output:
+The call ``print_frequencies(wordles)`` (where ``wordles`` is the list of all words in file [wordles.txt](wordles.txt)) produces the output:
 ```text
 s 6665
 e 6662
@@ -149,7 +149,7 @@ x 288
 q 112
 ```
 
-### Upper Second (60%+)
+### Upper Second (60%)
 * Implement function ``find_words_with_letters`` which given a list of words, and a list of letters, it returns the list
 of all words which contain exactly the given letters.
 * For example see the following sample runs.
@@ -166,11 +166,11 @@ In this case, the call ``find_words_with_letters(wordles, ['s', 'e', 'a', 'o', '
 ['arose', 'aeros', 'soare']
 ```
 
-### First (70%+)
-* Build a function ``check`` which given a secret word, and a test word, it realizes Wordle's rules to return a
+### First (70%)
+* Build a function ``check(secret, check_word)`` which given a secret word, and a test word, it realizes Wordle's rules to return a
 list of colors accordingly. The colors are either 'gray', 'yellow' or 'green' with the standard Wordle's semantics:
     - 'gray' if the checked character does not appear in the secret word
-    - 'yellow' if the checked character does appear in the secret word, but not in the same position
+    - 'yellow' if the checked character does appear in the secret word, but not in the correct position
     - 'green' if the checked character matches the character at the same position in the secret word.
 * For example see the following sample runs.
 
@@ -190,25 +190,26 @@ The call ``check('crane', 'raise')`` with some partial and one fully correct mat
 ```
 
 ### High First (80%+)
-* Build a function titled ``find_word`` which given a list of words and constraints, it returns a suitable word,
-if it exists, otherwise the constant 'None'.
+* Build a function titled ``find_word`` which given a list of words and constraints, it returns a suitable word
+(if it exists), otherwise it returns the constant ``None``.
 The constraints are:
-  - grays: A list of characters which are known to not exist in the target word
-  - yellows: A dictionary of characters to sets of indexes. The keys are characters, and the corresponding values are sets of integers, indicating the indices where it is known that the corresponding character in NOT at.
-  - greens: A dictionary of characters to sets of indices. The keys are characters, and the corresponding values are sets of integers, indicating the indices where it is known that the corresponding character is found at.
+  - grays: A list of characters which DO NOT exist in the target word
+  - yellows: A dictionary of characters to sets of indices. The keys are characters, which exist in the target word, but NOT in the indices specified by the corresponding values (provided as sets of integers).
+  - greens: A dictionary of characters to sets of indices. The keys are characters, and the corresponding values are sets of integers, indicating the indices where the corresponding character is found at.
 * This function returns a word from the given list which satisfies the given constraints, or ``None`` if no such word is found
 * For example, consider the call:
 
 ``find_word(['batch', 'ozone'], ['a', 'b', 'c', 'd'], {'n': {2}, 'z': {2, 3}}, {'o': {0, 2}, 'e': {4}})``
 
-* In this example, the search is in the given list of words, given the constraints:
-  - it does not contain any of the characters 'a', 'b', 'c', 'd'.
-  - It contains 'n' but not at index 2, and 'z' but not at indices 2, or 3.
-  - Finally, it contains 'o' at indices 0, 2, and it also contains 'e' at index 4.
+* In this example, the search takes place in the given list of words: ``batch`` and ``ozone``.
+* The word ``ozone`` satisfies the constraints:
+  - grays: It does NOT contain any of the characters 'a', 'b', 'c', 'd'.
+  - yellows: It contains 'n' but not at index 2, and 'z' but not at indices 2, or 3.
+  - Finally, greens: It contains 'o' at indices 0, 2, and it also contains 'e' at index 4.
 
-* This for example excludes 'batch' but could return 'ozone'.
+* Therefore, this example would return ``ozone`` but would exclude ``batch``.
 
-> Remember that the indices are 0-base which means the first position is index 0, and the last one (5th) is index 4.
+> Remember that the indices are 0-base which means the first position is index 0, and the last one (5<sup>th</sup>) is index 4.
 
 * For example see the following sample runs.
 
@@ -218,7 +219,7 @@ returns the word:
 space
 ```
 
-The call ``find_word(wordles, ['m'], {'p': {2, 3}, 'd': {0}}, {'a': {1, 4}})`` returns tghe word:
+The call ``find_word(wordles, ['m'], {'p': {2, 3}, 'd': {0}}, {'a': {1, 4}})`` returns the word:
 ```text
 panda
 ```
@@ -275,8 +276,8 @@ def find_word(words: [str], grays: [str], yellows: {}, greens: {}):
     Given a list of words and constraints, it returns a suitable word, if it exists, otherwise the constant 'None'.
     The constraints are:
     - grays: A list of characters which are known to not exist in the target word
-    - yellows: A dictionary of characters to sets of indexes. The keys are characters, and the corresponding values
-        are sets of integers, indicating the indices where it is known that the corresponding character in NOT at.
+    - yellows: A dictionary of characters to sets of indices. The keys are characters, and the corresponding values
+        are sets of integers, indicating the indices where it is known that the corresponding character is NOT at.
     - greens: A dictionary of characters to sets of indices. The keys are characters, and the corresponding values
         are sets of integers, indicating the indices where it is known that the corresponding character is found at.
     For example, consider the call:

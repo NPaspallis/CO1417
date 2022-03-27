@@ -38,8 +38,8 @@ def find_word(words: [str], grays: [str], yellows: {}, greens: {}):
     Given a list of words and constraints, it returns a suitable word, if it exists, otherwise the constant 'None'.
     The constraints are:
     - grays: A list of characters which are known to not exist in the target word
-    - yellows: A dictionary of characters to sets of indexes. The keys are characters, and the corresponding values
-        are sets of integers, indicating the indices where it is known that the corresponding character in NOT at.
+    - yellows: A dictionary of characters to sets of indices. The keys are characters, and the corresponding values
+        are sets of integers, indicating the indices where it is known that the corresponding character is NOT at.
     - greens: A dictionary of characters to sets of indices. The keys are characters, and the corresponding values
         are sets of integers, indicating the indices where it is known that the corresponding character is found at.
     For example, the call:
