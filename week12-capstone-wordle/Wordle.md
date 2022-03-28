@@ -57,53 +57,9 @@ for each required function.
 ## Marking scheme:
 
 ### Pass (40%)
-* Implement a function named ``print_frequencies`` which given a list of words, it prints a list of all letters found in
+* Implement a function named ``print_frequencies(words: [str])`` which given a list of words, it prints a list of all letters found in
 these words, and their frequency (i.e., the number of times each letter is encountered).
-
-* See sample runs below for more info.
-
-The call ``print_frequencies(['hello', 'world'])`` produces the output:
-```text
-h 1
-e 1
-l 3
-o 2
-w 1
-r 1
-d 1
-```
-The call ``print_frequencies(wordles)`` (where the wordles is the list of all words in file [wordles.txt](wordles.txt)) produces the output:
-```text
-c 2028
-i 3759
-g 1644
-a 5990
-r 4158
-e 6662
-b 1627
-u 2511
-t 3295
-s 6665
-y 2074
-h 1760
-m 1976
-p 2019
-w 1039
-k 1505
-l 3371
-f 1115
-o 4438
-v 694
-d 2453
-n 2952
-q 112
-j 291
-x 288
-z 434
-```
-
-### Lower Second (50%)
-* Enhance the above function ``print_frequencies`` so that the printed output shows the letters sorted by frequency in
+* The function must print the letters sorted by frequency in
 descending order, i.e., the letter with the highest frequency shows on top.
 
 * See sample runs below for more info.
@@ -149,7 +105,7 @@ x 288
 q 112
 ```
 
-### Upper Second (60%)
+### Lower Second (50%)
 * Implement function ``find_words_with_letters`` which given a list of words, and a list of letters, it returns the list
 of all words which contain exactly the given letters.
 * For example see the following sample runs.
@@ -166,7 +122,7 @@ In this case, the call ``find_words_with_letters(wordles, ['s', 'e', 'a', 'o', '
 ['arose', 'aeros', 'soare']
 ```
 
-### First (70%)
+### Upper Second (60%)
 * Build a function ``check(secret, check_word)`` which given a secret word, and a test word, it realizes Wordle's rules to return a
 list of colors accordingly. The colors are either 'gray', 'yellow' or 'green' with the standard Wordle's semantics:
     - 'gray' if the checked character does not appear in the secret word
@@ -189,7 +145,7 @@ The call ``check('crane', 'raise')`` with some partial and one fully correct mat
 ['yellow', 'yellow', 'gray', 'gray', 'green']
 ```
 
-### High First (80%+)
+### First (70%)
 * Build a function titled ``find_word`` which given a list of words and constraints, it returns a suitable word
 (if it exists), otherwise it returns the constant ``None``.
 The constraints are:
@@ -227,6 +183,81 @@ panda
 And the call ``find_word(wordles, 'aeiouyrwt', {}, {})`` returns no word:
 ```text
 None
+```
+
+### High First (80%+)
+* Build an interactive Wordle game.
+* You can reuse code developed in the previous steps, particularly the ``check`` function.
+* Your code should check that the input is valid and ignore invalid input.
+* Keep a count of the number of valid tries.
+* Print appropriate greetings at the beginning and finish of the game.
+* No need to use graphics. You can implement the game as a text-based game where the input is provided via the keyboard
+and the output is printed as text.
+
+* For example see the following sample runs.
+
+  * Sample run with secret word ``coped``:
+```text
+Welcome to the text-based Wordle game.
+I have guessed a secret word. Can you find it?
+(Type "quit" to exit)
+
+Enter a 5 letter word: raise
+1 -> ['gray', 'gray', 'gray', 'gray', 'yellow']
+
+Enter a 5 letter word: could
+2 -> ['green', 'green', 'gray', 'gray', 'green']
+
+Enter a 5 letter word: coved
+3 -> ['green', 'green', 'gray', 'green', 'green']
+
+Enter a 5 letter word: coped
+4 -> ['green', 'green', 'green', 'green', 'green']
+Congratulations! You found the wordle in 4 tries
+Bye!
+```
+
+* Sample run with secret word ``anode``:
+```text
+Welcome to the text-based Wordle game.
+I have guessed a secret word. Can you find it?
+(Type "quit" to exit)
+
+Enter a 5 letter word: raise
+1 -> ['gray', 'yellow', 'gray', 'gray', 'green']
+
+Enter a 5 letter word: craze
+2 -> ['gray', 'gray', 'yellow', 'gray', 'green']
+
+Enter a 5 letter word: above
+3 -> ['green', 'gray', 'green', 'gray', 'green']
+
+Enter a 5 letter word: alone
+4 -> ['green', 'gray', 'green', 'yellow', 'green']
+
+Enter a 5 letter word: anode
+5 -> ['green', 'green', 'green', 'green', 'green']
+Congratulations! You found the wordle in 5 tries
+Bye!
+```
+
+* Sample run with invalid input and quit:
+```text
+Welcome to the text-based Wordle game.
+I have guessed a secret word. Can you find it?
+(Type "quit" to exit)
+
+Enter a 5 letter word: abc
+abc is not 5 letters long
+
+Enter a 5 letter word: abcde
+abcde is not in the list of accepted words
+
+Enter a 5 letter word: hello
+1 -> ['gray', 'yellow', 'gray', 'gray', 'yellow']
+
+Enter a 5 letter word: quit
+Bye!
 ```
 
 ### Hints
