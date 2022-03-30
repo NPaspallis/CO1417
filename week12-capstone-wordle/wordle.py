@@ -56,37 +56,3 @@ def find_word(words: [str], grays: [str], yellows: {}, greens: {}):
     :return: a word from the given list which satisfies the constraints, or None if none is found
     """
     # todo
-
-
-def play(words: [str], starting_word: str, secret: str) -> int:
-    checked_word = starting_word
-    tries = 0
-    grays = []  # no letters are marked with gray initially - will add all those who are known to not exist in 'secret'
-    yellows = {}  # a mapping of characters, to list of indexes known to NOT have that character
-    greens = {}  # a mapping of characters, to the indexes known to have that character
-    while True:
-        print('trying:', checked_word)
-        tries += 1
-        checked_colors = check(secret, checked_word)
-        print('-> ', checked_colors)
-        if checked_colors == ['green', 'green', 'green', 'green', 'green']:
-            print('found! ', secret, '==', checked_word)
-            break
-
-        for index in range(len(checked_word)):
-            c = checked_word[index]
-            if checked_colors[index] == 'gray':  # update what you know about 'gray' letters
-                grays.append(c)
-            if checked_colors[index] == 'yellow':  # update what you know about 'yellow' letters
-                if c not in yellows.keys():
-                    yellows[c] = set()
-                yellows[c].add(index)
-            if checked_colors[index] == 'green':  # update what you know about 'green' letters
-                if c not in greens.keys():
-                    greens[c] = set()
-                greens[c].add(index)
-
-        checked_word = find_word(words, grays, yellows, greens)
-
-    return tries
-
