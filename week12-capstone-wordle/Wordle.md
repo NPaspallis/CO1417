@@ -186,8 +186,10 @@ None
 ```
 
 ### High First (80%+)
-* Build an interactive Wordle game.
-* You can reuse code developed in the previous steps, particularly the ``check`` function.
+* Build a console-based Wordle game.
+* You can reuse code developed in the previous steps, such as the ``check`` function.
+* Provide two modes of play: auto and interactive
+* Auto mode:
 * Your code should check that the input is valid and ignore invalid input.
 * Keep a count of the number of valid tries.
 * Print appropriate greetings at the beginning and finish of the game.
@@ -200,20 +202,24 @@ and the output is printed as text.
 ```text
 Welcome to the text-based Wordle game.
 I have guessed a secret word. Can you find it?
-(Type "quit" to exit)
+(Type "1" for auto game, "2" for interactive game, or "quit" to exit)
+Enter your choice: 1
 
-Enter a 5 letter word: raise
-1 -> ['gray', 'gray', 'gray', 'gray', 'yellow']
+Trying: penes
+->  ['yellow', 'yellow', 'gray', 'green', 'gray']
 
-Enter a 5 letter word: could
-2 -> ['green', 'green', 'gray', 'gray', 'green']
+Trying: lapel
+->  ['gray', 'gray', 'green', 'green', 'gray']
 
-Enter a 5 letter word: coved
-3 -> ['green', 'green', 'gray', 'green', 'green']
+Trying: hyper
+->  ['gray', 'gray', 'green', 'green', 'gray']
 
-Enter a 5 letter word: coped
-4 -> ['green', 'green', 'green', 'green', 'green']
-Congratulations! You found the wordle in 4 tries
+Trying: biped
+->  ['gray', 'gray', 'green', 'green', 'green']
+
+Trying: coped
+->  ['green', 'green', 'green', 'green', 'green']
+Congratulations! You found the wordle in 5 tries
 Bye!
 ```
 
@@ -221,7 +227,8 @@ Bye!
 ```text
 Welcome to the text-based Wordle game.
 I have guessed a secret word. Can you find it?
-(Type "quit" to exit)
+(Type "1" for auto game, "2" for interactive game, or "quit" to exit)
+Enter your choice: 2
 
 Enter a 5 letter word: raise
 1 -> ['gray', 'yellow', 'gray', 'gray', 'green']
@@ -245,7 +252,9 @@ Bye!
 ```text
 Welcome to the text-based Wordle game.
 I have guessed a secret word. Can you find it?
-(Type "quit" to exit)
+(Type "1" for auto game, "2" for interactive game, or "quit" to exit)
+Enter your choice: something
+Enter your choice: 2
 
 Enter a 5 letter word: abc
 abc is not 5 letters long
