@@ -189,12 +189,12 @@ None
 * Build a console-based Wordle game.
 * You can reuse code developed in the previous steps, such as the ``check`` function.
 * Provide two modes of play: auto and interactive
-* Auto mode:
-* Your code should check that the input is valid and ignore invalid input.
 * Keep a count of the number of valid tries.
 * Print appropriate greetings at the beginning and finish of the game.
 * No need to use graphics. You can implement the game as a text-based game where the input is provided via the keyboard
 and the output is printed as text.
+* In the interactive play mode, you should also check that the input is valid, and ignore invalid input.
+
 
 * For example see the following sample runs.
 
