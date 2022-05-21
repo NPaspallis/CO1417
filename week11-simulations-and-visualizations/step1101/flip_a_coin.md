@@ -8,7 +8,7 @@ You will notice the outcome is either ``heads`` or ``tails``.
 
 The ``heads`` and ``tails`` graphics from Google Search
 
-A **fair flip** should give ``heads`` and ``tails`` with an equal, 50-50 chance. Let's assume that we have a way to flip coins fairly.
+A **fair flip** should give ``heads`` or ``tails`` with an equal, 50-50 chance. Let's assume that we have a way to flip coins fairly.
 
 ## Flipping a coin many times
 

@@ -37,11 +37,11 @@ Introduces Object-Oriented Programming (OOP) in Python. Also covers animation lo
 
 ### Week 4 - Capstone project: Arkanoid
 
-To sum up section 1, you are asked to develop an [Arkanoid-like game](https://en.wikipedia.org/wiki/Arkanoid).
+To sum up weeks 1-3, you are asked to develop an [Arkanoid-like game](https://en.wikipedia.org/wiki/Arkanoid).
 
 You can reuse code from the lectures and the exercises.
 
-The exact specification, marking scheme, and hints are provided in the corresponding lab worksheet.
+The exact specification, marking scheme, and hints are provided in the [corresponding lab worksheet](week04-capstone-arkanoid/Arkanoid.md).
 
 ## Games and Graphics
 
@@ -80,4 +80,43 @@ programming concepts:
 
 ### Week 8 - Capstone project: Runner game
 
+To sum up weeks 5-7, you are asked to develop a [Dino runner game](https://en.wikipedia.org/wiki/Dinosaur_Game).
+
+You can reuse code from the lectures and the exercises.
+
+The exact specification, marking scheme, and hints are provided in the [corresponding lab worksheet](week08-capstone-dino/Dino.md).
+
+
 ## Networks and Security
+
+### Week 9 - Password cracking
+
+Discusses basic forms of security, including password cracking techniques in different forms. It covers:
+- Use of Hashing algorithms, such as MD5 and SHA256
+- Performing benchmarks to compare the performance of algorithms
+- Forming random words using characters
+- Producing all the possible letter permutations
+- Brute-force password attack
+- Dictionary-based password attack
+
+### Week 10 - Algorithms and Data structures
+
+Discusses basic forms of Data structures and Algorithms and focuses on built-in support of Python for these:
+- Basic Python Data structures, including ``lists``, ``tuples``, ``sets``, and ``dicts``
+- Using built-in functions which realize standard algorithms such as shuffle, sort, etc.
+- Examine intractable problems, such as the _Traveling Salesman Problem_ (TSP)
+
+### Week 11 - Simulations and Visualizations
+
+Examines how simulations can be used to implement experiments and infer results.
+- Realizes a _Flip Coin_ simulation
+- Examines and visualizes a _Random Walk_ simulation
+- Realizes a _Roulette_ simulation, examining whether it'd be possible to beat the casino 
+
+### Week 12 - Capstone project: Wordle game
+
+To sum up weeks 9-11, you are asked to develop a [Wordle assistant](https://en.wikipedia.org/wiki/Wordle).
+
+As before, you can reuse code from the lectures and the exercises.
+
+The exact specification, marking scheme, and hints are provided in the [corresponding lab worksheet](week12-capstone-wordle/Wordle.md).
