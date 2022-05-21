@@ -1,12 +1,4 @@
-# This program introduces classes, a feature of object-Oriented Programming.
-# At its core, Object-Oriented Programming (OOP) organizes programs into main concepts (classes) which define code
-# for abstracting data (values) and behavior (functions).
-# In this example we demonstrate OOP with a Ball class. This class concentrates all necessary data for a Ball: The
-# data includes the position of the ball (x,y), its speed (speed_x,speed_y), its width, color, etc. The functionality
-# includes the ability of the ball to update its position based on its speed, and to cycle its colour.
-#
-# This page provides a good introduction to Object-Oriented Programming with Python:
-# https://www.datacamp.com/community/tutorials/python-oop-tutorial
+# This program continues with classes, a feature of object-Oriented Programming.
 
 from tkinter import *
 from random import randint  # the 'randint' is needed for generating random integers - used to position balls at random initial coordinates
@@ -20,7 +12,7 @@ DEFAULT_BALL_RADIUS = 10
 DEFAULT_COLORS = ['red', 'green', 'blue', 'yellow', 'cyan', 'purple', 'orange', 'pink', 'white', 'black']
 
 win = Tk()  # as before, creates a window
-win.title('Simple animation over both axes, defining two balls as objects')
+win.title('Simple animation over both axes, defining many balls moving randomly')
 
 
 # Define a class named 'Ball'.

@@ -1,4 +1,4 @@
-# Exercise 0105
+# Exercise 0104
 
 The attached code is supposed to print a checker pattern (like a chessboard). But it has a bug.
 You are asked to fix the bug.

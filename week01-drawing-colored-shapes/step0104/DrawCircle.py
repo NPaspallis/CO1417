@@ -51,7 +51,7 @@ radius = 100  # The circle radius (in pixels).
 
 # The value can be any of the main colors (such as 'black', 'white', 'red', 'blue', 'green', 'yellow', etc.)
 # For a complete list of the colors 'recognizable' by tkinter, see:
-# http://www.science.smith.edu/dftwiki/index.php/Color_Charts_for_TKinter.
+# https://www.wikipython.com/tkinter-ttk-tix/summary-information/colors/.
 # todo Modify the program to set the canvas background to your favorite color.
 
 win.mainloop()  # Always, the last command must be the 'mainloop()' to run the GUI.

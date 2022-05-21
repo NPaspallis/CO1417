@@ -1,4 +1,4 @@
-# Exercise 0201
+# Exercise 0202
 
 Create a program to draw a rectangle of width 50 and height 10, positioned at the bottom center of the screen.
 
