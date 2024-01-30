@@ -75,7 +75,8 @@ def animation():
     canvas.after(DELAY, animation)
 
 
-# todo Modify the code so that it generates multiple balls, e.g., 20 - aim to use a for-loop rather than copy-paste the code
+# todo Modify the code so that it generates multiple balls, e.g., 20 - aim to use a for-loop rather than copy-paste
+# todo the code
 animation()
 
 win.mainloop()  # listens for events, such as key presses and mouse clicks

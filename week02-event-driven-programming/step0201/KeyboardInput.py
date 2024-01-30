@@ -1,5 +1,5 @@
 # In this exercise, we will create a window and draw a circle in it.
-# But this time, we will define a function so we can easily draw any circle at any point with any side size.
+# But this time, we will define a function, so we can easily draw any circle at any point with any side size.
 # Then we will handle input (in terms of key presses) to redraw the circle left/right/up/down respectively.
 
 # Let's start with importing the 'tkinter' library again.
@@ -33,7 +33,7 @@ print('Use the arrow keys to draw the circle elsewhere in the window!')
 # The 'left' function handles the left arrow key, etc.
 # Each of these functions takes an argument 'event' which is required but not used.
 def left(event):
-    global x  # The 'global keyword here means: Do not define a new value. Reuse the existing one from the outer scope.
+    global x  # The 'global' keyword here means: Do not define a new value. Reuse the existing one from the outer scope.
     x = x - 10  # Move the circle 10 pixels to the left.
     canvas.create_oval(x-radius, y-radius, x+radius, y+radius)  # draw the circle
 
@@ -59,7 +59,7 @@ def down(event):
 # Now, bind the corresponding events (i.e. arrow key presses) to a named function.
 # The functions must be defined 'before' they can be mentioned. That is why we define the functions first, then bind
 # them to the corresponding key-press events.
-win.bind('<Left>', left)  # Note how the 'left' arrow key is encoded as '<Left>'. Similarly for the other arrow keys.
+win.bind('<Left>', left)  # Note how the 'left' arrow key is encoded as '<Left>'. Similarly, for the other arrow keys.
 win.bind('<Right>', right) # The second argument of the 'bind' is the function to be called
 win.bind('<Up>', up)
 win.bind('<Down>', down)

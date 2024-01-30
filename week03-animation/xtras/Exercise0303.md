@@ -5,5 +5,5 @@ As the speed of each ball over the horizontal and vertical axis is decided in _r
 some of the balls are stationary (i.e., not moving). 
 
 You are asked to:
-1. Make sure that speed over X and speed over Y are checked, so they are never 0
+1. Make sure that speed over X and speed over Y are checked, so that they are never 0 (neither X, nor Y).
 2. Relax the previous constraint so that you check that the speed over X can be 0, as long as speed over Y is not. and vice versa. In other words make sure that at least one of speed over X and speed over Y is not 0 (but leave the possibility for one of the two to be 0).

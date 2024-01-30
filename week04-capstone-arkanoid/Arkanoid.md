@@ -7,7 +7,7 @@ hitting them with the ball.
 
 Learn more about Arkanoid and view a screenshot on Wikipedia: https://en.wikipedia.org/wiki/Arkanoid
 
-You can view the gameplay of Arkanoid on YouTube: https://www.youtube.com/watch?v=tn6-zcSxrO4
+You can view the gameplay of Arkanoid on YouTube: https://www.youtube.com/watch?v=Th-Z6QQ5AOQ
 
 > Fun fact: Google's DeepMind was able to develop a Machine Learning (ML) algorithm which achieved to teach itself to
 play Arkanoid like a  pro human. See the video on YouTube: https://www.youtube.com/watch?v=V1eYniJ0Rnk

@@ -68,10 +68,9 @@ canvas_object = canvas.create_oval(b.x - b.radius, b.y - b.radius, b.x + b.radiu
 
 
 def animation():
-    global b1, b2
     b.move()
-    canvas.after(DELAY, animation)
     canvas.coords(canvas_object, b.x-b.radius, b.y-b.radius, b.x+b.radius, b.y+b.radius)
+    canvas.after(DELAY, animation)
 
 
 animation()

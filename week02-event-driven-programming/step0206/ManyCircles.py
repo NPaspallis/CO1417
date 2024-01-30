@@ -43,7 +43,7 @@ def move(event):
     # At this point we check whether our structure has exceeded its intended capacity: SIZE.
     if len(drawn_circles) > MAX_SIZE:
         # If we have more circles than SIZE then we need to delete the oldest one.
-        # While we delete it, we also need to get its ID so we can delete it from the canvas.
+        # While we delete it, we also need to get its ID, so we can delete it from the canvas.
         id_of_circle_to_be_deleted = drawn_circles.pop(0)  # The 'pop' function removes and returns the specified
         # element from the List. To remove and return the first one, we specify its index, which is 0.
         # Then we use the 'delete' function of the Canvas, which takes an object id and deletes it.

@@ -1,7 +1,8 @@
 # This program continues with classes, a feature of object-Oriented Programming.
 
 from tkinter import *
-from random import randint  # the 'randint' is needed for generating random integers - used to position balls at random initial coordinates
+from random import randint  # the 'randint' is needed for generating random integers - used to position balls at random
+# initial coordinates
 
 WIDTH = 800
 HEIGHT = 600

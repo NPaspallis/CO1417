@@ -39,7 +39,8 @@ def animation():
 
     # The following call updates the coordinates of the ball with the ID 'ball_id', declared earlier.
     canvas.coords(ball_id, ball_x-ball_r, ball_y-ball_r, ball_x+ball_r, ball_y+ball_r)
-    canvas.after(DELAY, animation)  # This calls this function (named 'animation') again, after waiting 'DELAY' milliseconds.
+    canvas.after(DELAY, animation)  # This calls this function (named 'animation') again, after waiting 'DELAY'
+    # milliseconds.
 
 
 animation()
